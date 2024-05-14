@@ -1,24 +1,17 @@
 @use "../abstracts/" as *;
 
 .pricing-plans {
-  border: $size-8 solid $color-primary-400;
+  border: size(8) solid clr(primary, 400);
   display: flex;
 }
 
 .tier {
   flex: 1;
-  padding: $size-32;
   display: grid;
-  gap: $size-20;
+  gap: size(20);
 
   &__title {
-    color: $color-primary-400;
-    font-weight: $fw-700;
     text-transform: uppercase;
-
-    .inverted & {
-      color: $color-neutral-100;
-    }
   }
 
   &__feature-list {
@@ -30,18 +23,8 @@
       content: "";
       display: block;
       height: 1px;
-      background-color: rgb($color-neutral-900, 0.2);
-      margin-block: $size-20;
-    }
-  }
-
-  &__price {
-    font-size: $fs-800;
-    font-weight: $fw-700;
-
-    span {
-      font-size: $fs-600;
-      font-weight: $fw-400;
+      background-color: rgb(clr(neutral, 900), 0.2);
+      margin-block: size(20);
     }
   }
 }

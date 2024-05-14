@@ -2,22 +2,17 @@
 
 .button {
   padding: 1em 1.5em;
-  background-color: $color-primary-400;
+  background-color: clr(primary, 400);
   border: none;
-  color: $color-neutral-100;
+  color: clr(neutral, 100);
   font-weight: $fw-700;
   text-transform: uppercase;
   cursor: pointer;
   justify-self: center;
 
-  .inverted & {
-    background-color: $color-neutral-100;
-    color: $color-primary-400;
-  }
-
   &:hover,
   &:focus {
-    color: $color-neutral-100;
-    background-color: rgb($color-neutral-900, 0.8);
+    color: clr(neutral, 100);;
+    background-color: rgb(clr(neutral, 900), 0.8);
   }
 }
